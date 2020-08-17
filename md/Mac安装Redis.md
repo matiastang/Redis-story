@@ -6,15 +6,11 @@
 
 1. [官网下载](https://redis.io/download)Redis（建议下载最新的稳定版本）
 2. 解压，下载压缩包目录，命令行执行`tar zxvf redis-6.0.6.tar.gz`
-3. 移动文件，`mv redis-6.0.6 /usr/local/`
+3. 移动文件，`sudo mv redis-6.0.6 /usr/local/`
 4. 进入`redis-6.0.0`目录
 5. 编译测试 `sudo make test`
 6. 编译安装 `sudo make install`
-7. 查看安装的版本
-```
-redis-server -v
-redis-cli -v
-```
+7. 查看安装的`server`版本`redis-server -v`，查看`cli`版本`redis-cli -v`
 * 启动server`redis-server`
 * 启动cli`redis-cli`
 

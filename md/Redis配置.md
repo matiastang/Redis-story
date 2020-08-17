@@ -46,7 +46,7 @@ save 60 10000
 rdbcompression yes
 #指定本地数据库文件名
 dbfilename dump.rdb
-#指定本地数据库路径
+#指定本地数据库路径(默认没有db文件夹，需要创建)
 dir /usr/local/redis-3.2.8/db/
 #指定是否在每次更新操作后进行日志记录，Redis在默认情况下是异步的把数据写入磁盘，如果不开启，可能
 #会在断电时导致一段时间内的数据丢失。因为 redis本身同步数据文件是按上面save条件来同步的，所以有
@@ -58,6 +58,8 @@ appendonly no
 #everysec：表示每秒同步一次（折衷，默认值）
 appendfsync everysec
 ```
+查看配置`cat redis.conf | grep -v "#" | grep -v "^$"`
+`cat /usr/local/etc/redis.conf | grep -v "#" | grep -v "^$"`
 
 启动服务
 ```

@@ -1,11 +1,3 @@
-<!--
- * @Descripttion: 
- * @version: 
- * @Author: sueRimn
- * @Date: 2020-08-17 18:29:49
- * @LastEditors: sueRimn
- * @LastEditTime: 2020-08-17 18:39:30
--->
 # Redis使用
 
 关闭服务端
